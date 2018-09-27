@@ -2,13 +2,16 @@
   "name": "websiterelaxation",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "dist/index.html",
+  "homepage": "https://CyrilleBB.github.io/relaxationWebsite",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "gh-pages": "^2.0.0"
   }
 }
