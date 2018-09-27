@@ -5,8 +5,7 @@
   "main": "dist/index.html",
   "homepage": "https://CyrilleBB.github.io/relaxationWebsite",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
