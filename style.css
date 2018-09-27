@@ -1,6 +1,8 @@
 html,
 body {
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 body {
@@ -70,13 +72,33 @@ body {
 
 .container {
   color: #fff;
-  display: flex;
+  display: none;
   position: absolute;
-  bottom: 2vh;
-  left: 5vw;
+  bottom: 2.7vh;
+  left: 10vw;
+}
+
+.containerShow {
+  display: flex;
 }
 
 .box {
   margin-right: 3vh;
   cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2vh;
+  left: 3vw;
+  cursor: pointer;
+}
+
+.btn-line {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
 }

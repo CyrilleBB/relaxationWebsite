@@ -1,3 +1,15 @@
+const menu = document.querySelector(".menu");
+const container = document.querySelector(".container");
+
+function toggleMenu() {
+  container.classList.toggle("containerShow");
+}
+
+function apparitionMenu() {
+  menu.addEventListener("click", toggleMenu);
+}
+apparitionMenu();
+
 const ambiance = document.querySelector("#ambiance");
 
 const mer = document.querySelector(".mer");
