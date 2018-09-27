@@ -1,0 +1,16 @@
+{
+  "name": "websiterelaxation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "homepage": "https://CyrilleBB.github.io/relaxationWebsite",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}

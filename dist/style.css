@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background-image: url("images/mer.jpg");
+  background-size: cover;
+}
+
+#boite {
+  position: relative;
+  top: 25vh;
+  left: 37vw;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+#cercle {
+  position: absolute;
+  box-sizing: border-box;
+  top: 25%;
+  left: 25%;
+  width: 150px;
+  height: 150px;
+  transform: scale(1);
+  border-radius: 50%;
+  border: 14px solid #fff;
+  animation: grossi 15s ease-in-out infinite;
+}
+
+#respire::after {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  content: "";
+  animation: respirer 15s ease-in-out infinite;
+}
+
+@keyframes grossi {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes respirer {
+  0% {
+    content: "inspire";
+  }
+  49% {
+    content: "inspire";
+  }
+  50% {
+    content: "expire";
+  }
+
+  100% {
+    content: "expire";
+  }
+}
+
+.container {
+  color: #fff;
+  display: none;
+  position: absolute;
+  bottom: 2.7vh;
+  left: 10vw;
+}
+
+.containerShow {
+  display: flex;
+}
+
+.box {
+  margin-right: 3vh;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2vh;
+  left: 3vw;
+  cursor: pointer;
+}
+
+.btn-line {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
+}
